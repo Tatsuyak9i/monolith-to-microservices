@@ -116,6 +116,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+          　         <mainClass>works.weave.socks.broker.BrokerApplication</mainClass>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
@@ -124,7 +127,6 @@
                         <configuration>
                             <outputDirectory>${project.build.directory}/exec</outputDirectory>
                             <classifier>exec</classifier>
-                        　　　　　　　　<mainClass>works.weave.socks.broker.BrokerApplication</mainClass>
                         </configuration>
                     </execution>
                 </executions>
