@@ -124,6 +124,7 @@
                         <configuration>
                             <outputDirectory>${project.build.directory}/exec</outputDirectory>
                             <classifier>exec</classifier>
+                        　　　　　　　　<mainClass>works.weave.socks.broker.BrokerApplication</mainClass>
                         </configuration>
                     </execution>
                 </executions>
