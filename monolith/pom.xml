@@ -125,43 +125,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <plugin>
-                <groupId>io.fabric8</groupId>
-                <artifactId>docker-maven-plugin</artifactId>
-                <configuration>
-                    <images>
-                        <image>
-                            <name>${project.artifactId}:${project.version}</name>
-                            <alias>${project.artifactId}</alias>
-                            <build>
-                                <from>openjdk:8-jre-alpine</from>
-                                <ports>
-                                    <port>8080</port>
-                                </ports>
-                                <assembly>
-                                    <mode>tar</mode>
-                                    <descriptor>${root.basedir}/assembly.xml
-                                    </descriptor>
-                                </assembly>
-                                <entryPoint>
-                                    <shell>java $JAVA_OPTS -jar /maven/exec/${project.artifactId}-${project.version}-exec.jar</shell>
-                                </entryPoint>
-                            </build>
-                        </image>
-                    </images>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>build</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>build</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
         </plugins>
     </build>
 
