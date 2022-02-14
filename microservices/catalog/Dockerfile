@@ -1,4 +1,4 @@
-FROM ubi8/ubi-minimal
+FROM registry.access.redhat.com/ubi8/ubi-minimal:latest
 RUN mkdir -p /opt/gochassis && \
     mkdir -p /opt/gochassis/conf && \
     mkdir -p /opt/gochassis/log && \
