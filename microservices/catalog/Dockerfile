@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 RUN mkdir -p /opt/gochassis && \
     mkdir -p /opt/gochassis/conf && \
-    mkdir -p /opt/gochassis/log && ¥
+    mkdir -p /opt/gochassis/log && \
     touch /opt/gochassis/log/chassis.log
 
 
