@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubi8/ubi-minimal
 RUN mkdir -p /opt/gochassis && \
     mkdir -p /opt/gochassis/conf && \
     mkdir -p /opt/gochassis/log && \
