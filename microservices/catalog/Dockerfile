@@ -1,6 +1,7 @@
 FROM ubuntu:14.04
 RUN mkdir -p /opt/gochassis && \
-    mkdir -p /opt/gochassis/conf
+    mkdir -p /opt/gochassis/conf && \
+    mkdir -p /opt/gochassis/log
 
 
 COPY ./conf/microservice.yaml  /opt/gochassis/conf
