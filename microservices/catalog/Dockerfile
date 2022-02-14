@@ -12,4 +12,5 @@ RUN chown -R 1001:0 /opt/gochassis  && \
     chgrp -R 0 /opt/gochassis && \
     chmod -R g=u /opt/gochassis
 WORKDIR $CHASSIS_HOME
+EXPOSE 8089
 CMD ["/opt/gochassis/Catalog"]
